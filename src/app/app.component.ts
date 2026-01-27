@@ -29,6 +29,12 @@ import agenda from './agenda.json'
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  alfabeto: string = 'abcdefghijklmnopqrstuvwxyz'
-  contatos: Contato[] = agenda
+  alfabeto: string = 'abcdefghijklmnopqrstuvwxyz';
+  contatos: Contato[] = agenda;
+
+  filtrarContatosPelaLetraInical(letra: string): Contato[] {
+    return this.contatos.filter(contato => {
+      return contato.nome.toLowerCase().startsWith(letra);
+    });
+  }
 }
