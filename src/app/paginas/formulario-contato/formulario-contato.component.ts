@@ -29,4 +29,12 @@ export class FormularioContatoComponent {
     });
   }
 
+  salvarContato() {
+    console.log(this.contatoForm.value);
+  }
+
+  cancelar() {
+    console.log("Submissão cancelada!");
+  }
+
 }
