@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ContainerComponent } from "../../componentes/container/container.component";
 import { SeparadorComponent } from "../../componentes/separador/separador.component";
@@ -7,6 +8,7 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
   selector: 'app-formulario-contato',
   standalone: true,
   imports: [
+    CommonModule,
     ContainerComponent,
     SeparadorComponent,
     ReactiveFormsModule
@@ -30,9 +32,7 @@ export class FormularioContatoComponent {
   }
 
   salvarContato() {
-    if (this.contatoForm.valid) {
-      console.log(this.contatoForm.value);
-    }
+    console.log(this.contatoForm.value);
   }
 
   cancelar() {
