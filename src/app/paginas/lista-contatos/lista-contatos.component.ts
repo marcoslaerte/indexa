@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from "@angular/router";
+
 import { CabecalhoComponent } from '../../componentes/cabecalho/cabecalho.component';
 import { ContainerComponent } from '../../componentes/container/container.component';
 import { ContatoComponent } from '../../componentes/contato/contato.component';
@@ -25,8 +27,9 @@ interface Contato {
     SeparadorComponent,
     ContatoComponent,
     FormsModule,
-    FormularioContatoComponent
-  ],
+    FormularioContatoComponent,
+    RouterLink
+],
   templateUrl: './lista-contatos.component.html',
   styleUrl: './lista-contatos.component.css'
 })
