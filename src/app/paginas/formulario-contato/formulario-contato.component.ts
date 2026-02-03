@@ -1,3 +1,4 @@
+import { ContatoService } from './../../services/contato.service';
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
@@ -23,6 +24,8 @@ export class FormularioContatoComponent implements OnInit {
 
   contatoForm!: FormGroup
 
+  constructor(private contatoService: ContatoService) {}
+
   ngOnInit() {
     this.inicializarFormulário();
   }
@@ -39,7 +42,8 @@ export class FormularioContatoComponent implements OnInit {
   }
 
   salvarContato() {
-    console.log(this.contatoForm.value);
+    const novoContato = this.contatoForm.value;
+    this.contatoService.salvarContato(novoContato);
   }
 
   cancelar() {
