@@ -10,15 +10,6 @@
       "id": 1
     },
     {
-      "nome": "João",
-      "telefone": "88 88888888",
-      "email": "maria@email.com",
-      "aniversario": "06/01/1990",
-      "redes": "",
-      "observacoes": "",
-      "id": 2
-    },
-    {
       "nome": "Nayane",
       "telefone": "11 99999-9999",
       "email": "nayane@email.com",
@@ -26,6 +17,15 @@
       "redes": "",
       "observacoes": "",
       "id": 3
+    },
+    {
+      "nome": "João",
+      "telefone": "11 7777-66666",
+      "email": "joao@email.com",
+      "aniversario": "1910-10-10",
+      "redes": "joao.com.br",
+      "observacoes": "nenhuma",
+      "id": 4
     }
   ]
 }
