@@ -19,12 +19,13 @@ import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 export class PerfilContatoComponent implements OnInit{
 
   contato: Contato = {
-    "id": 0,
-    "nome": "dev",
-    "telefone": "123123123",
-    "email": "dev@email.com",
-    "aniversario": "12/10/1990",
-    "redes": "dev.com",
+    id: 0,
+    nome: '',
+    avatar: '',
+    telefone:'',
+    email: '',
+    aniversario: '',
+    redes: ''
   }
 
   constructor(
